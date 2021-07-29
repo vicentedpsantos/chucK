@@ -2,7 +2,8 @@
 SinOsc s => dac;
 
 // Infinite time loop
-while( true ) {
+while( true )
+{
   100::ms => now;
-  Std.rand2f(30.0, 1000.0) => s.freq;
+  Std.rand2f(500.0, 1000.0) => s.freq;
 }
